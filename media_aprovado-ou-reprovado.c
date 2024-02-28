@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 
 void cabecalho(){
 	system("cls || clear");
@@ -7,6 +8,7 @@ void cabecalho(){
 	fflush(stdin); // onlineGDB -> setbuf(stdin 0);
 }
 int main(){
+	setlocale(LC_ALL, "");
 	char nome[300];
 	int idade;
 	float primeiraNota, segundaNota, terceiraNota, media;
@@ -39,10 +41,10 @@ int main(){
 	printf("\nMedia:%.2f\n", media);
 	
 	if (media >= 7){
-		printf("\n== APROVADO ==");
+		printf("\n== SITUAÇÃO : APROVADO ==");
 	}
 	else{
-		printf("\n== REPROVADO ==");
+		printf("\n== SITUAÇÃO - REPROVADO ==");
 	}
 	
 	return 0;
