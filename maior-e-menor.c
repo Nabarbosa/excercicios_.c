@@ -32,9 +32,6 @@ int main(){
 		maiorValor = segundoNumero;
 		menorValor = primeiroNumero;
 	}
-	if (primeiroNumero == segundoNumero){
-		printf("\nNúmeros iguais!");
-	}
 	
 	printf("\nPrimeiro número:%i", primeiroNumero);
 	printf("\nSegundo número:%i", segundoNumero);
@@ -43,6 +40,10 @@ int main(){
 	printf("\nProduto:%.1f", produto);
 	printf("\nMaior valor:%.1i", maiorValor);
 	printf("\nMenor valor:%.1i", menorValor);
+	
+	if (primeiroNumero == segundoNumero){
+		printf("\nNúmeros iguais!");
+	}
 	
 	return 0;
 }
