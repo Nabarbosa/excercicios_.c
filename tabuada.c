@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-	int i, numero, tabuada;
+	int i, numero;
 	
 	printf("Digite um numero: ");
 	scanf("%i",&numero);
