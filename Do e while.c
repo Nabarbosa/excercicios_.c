@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main(){
+int main() {
 	int contador = 0;
 	char continua;
 	
-	do {
+	do { // Faça
+	// Comandos a serem repetidos.
 		
 		printf("Repetindo....\n");
 		
@@ -14,8 +15,9 @@ int main(){
 		scanf("%c",&continua);
 		fflush(stdin);
 		
-	} while (continua == 's');
+	} while (continua == 's'); //Enquanto
 	
+	//Exibindo quantidade de vezes que o laço de repetição aconteceu.
 	printf("O bloco foi repetido %d vezes", contador);
 	
 	return 0;
