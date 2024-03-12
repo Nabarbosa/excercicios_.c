@@ -9,7 +9,7 @@ int main(){
 	float mediaFinal;
 	
 	for(i = 1; i <= 3; i++) {
-		printf("Digite a sua %i™ nota: ", i);
+		printf("Digite a sua %i¬™ nota: ", i);
 		scanf("%i",&nota);
 		
 		media += nota;
@@ -17,12 +17,14 @@ int main(){
 	
 	mediaFinal = media / 3;
 	
-	printf("\nMÈdia final: %2.f", mediaFinal);
+	printf("\nM√©dia final: %2.f", mediaFinal);
 	
 	if(mediaFinal >= 7){
-		printf("\n === SituaÁ„o : Aprovado ===");
-	} if(mediaFinal <= 4){
-		printf("\n === SituaÁ„o : Reprovado ===");
+		printf("\n === Situa√ß√£o : Aprovado ===");
+	} else if(mediaFinal >= 4){
+		printf("\n === Situa√ß√£o : Recupera√ß√£o ===");
+	} else {
+		printf("\n === Situa√ß√£o : Reprovado ===");
 	}
 	
 	return 0;
